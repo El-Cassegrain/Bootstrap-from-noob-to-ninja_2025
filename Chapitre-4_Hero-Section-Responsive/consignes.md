@@ -5,4 +5,4 @@
 - Nous avons crée une hero section responsive ; changer la taille du viewport pour voir la magie opérer. Nous n'avons écrit aucune média queries, Bootstrap le fait sous le capot.
 - Ajouter la classe ```img-fluid``` sur l'image, et redimensionnez le viewport, on peut voir que l'image est "fluide". Sous le capot il y a juste un ```width: 100%``` et un ```height: auto```.
 - Ajouter un ```d-none d-lg-block``` au texte d'intro, et redimensionner le viewport. Le d est pour display.
-- Mettre un ```text-center text-lg-start``` au bouton primary
+- Mettre un ```text-center text-lg-start``` au container bouton primary

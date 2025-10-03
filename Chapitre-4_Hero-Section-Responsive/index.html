@@ -73,7 +73,8 @@
 
 
                 <!-- Mettre le h1 et le texte d'intro dans la première col -->
-                <h1 class="mt-5 mt-lg-0 mb-3 display-2 fw-bold text-center text-lg-start text-uppercase d-flex flex-column">
+                <h1
+                    class="mt-5 mt-lg-0 mb-3 display-2 fw-bold text-center text-lg-start text-uppercase d-flex flex-column">
                     Bootstrap
                     <span class="fs-2 fw-medium">
                         From
@@ -115,11 +116,14 @@
                 <p class="lead">Un tutoriel étape par étape afin d'apréhender le plus fameux des frameworks front-end,
                     dans sa dernière version.</p>
                 <p class="fw-bold">Passez de newbies à de véritables Ninjas avec Bootstrap 5.3</p>
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#result-modal">
-                    Résultat attendu
-                    <i class="bi bi-award ms-2"></i>
+                <div class="btn-container">
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#result-modal">
+                        Résultat attendu
+                        <i class="bi bi-award ms-2"></i>
 
-                </button>
+                    </button>
+                </div>
                 <!-- L'image hero se trouve dans assets/img/ la mettre dans seconde col -->
 
             </section>
@@ -141,30 +145,19 @@
             <p>Réaliser toutes les consignes obligatoires dans consignes.md</p>
 
             <h3 class="mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="52" fill="none" viewBox="0 0 50 52">
-                    <g clip-path="url(#a)">
-                        <path fill="url(#b)"
-                            d="M35.245 32.098c5.048-3.029 8.425-8.53 8.425-14.803C43.67 7.76 35.85 0 26.242 0 18.069 0 11.197 5.61 9.319 13.146L3.54 7.41.046 10.887l3.874 3.845H0v4.91h8.976c.722 5.278 3.856 9.812 8.263 12.456-8.1 3.28-13.98 10.87-14.747 19.902h4.976c1.011-9.391 9.048-16.739 18.783-16.739 9.734 0 17.771 7.339 18.782 16.739h4.976c-.777-9.033-6.655-16.622-14.764-19.902ZM26.242 4.91c4.253 0 8.018 2.123 10.267 5.358H15.974A12.5 12.5 0 0 1 26.242 4.91Zm-12.48 12.383c0-.725.063-1.433.18-2.123h24.599c.117.69.18 1.398.18 2.123a12.3 12.3 0 0 1-.316 2.787H14.087a11.828 11.828 0 0 1-.325-2.787Zm2.718 7.698h19.541a12.49 12.49 0 0 1-9.77 4.686 12.477 12.477 0 0 1-9.771-4.686Z" />
-                    </g>
-                    <defs>
-                        <linearGradient id="b" x1="7.401" x2="52.757" y1="1.3" y2="44.769"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#9013FE" />
-                            <stop offset="1" stop-color="#F210E3" />
-                        </linearGradient>
-                        <clipPath id="a">
-                            <path fill="#fff" d="M0 0h50v52H0z" />
-                        </clipPath>
-                    </defs>
-                </svg>
+                <img src="assets/img/ninja_gradient.svg" alt="Ninja Icon">
                 Ninja Challenge
             </h3>
 
             <p>En plus des consignes obligatoires :</p>
 
             <ol class="list-group list-group-numbered my-3">
-                <li class="list-group-item">Mettre l'image alignée sur la bordure droite du container pour garder une cohérence sur l'alignement de la page, sur desktop >992px.</li>
-                <li class="list-group-item">Changer le contenu de la modale "résultat attendu" qui se lance au clic par une image de GIF de votre choix ! (j'aime les chats, et matrix)</li>
+                <li class="list-group-item">Mettre l'image alignée sur la bordure droite du container pour garder une
+                    cohérence sur l'alignement de la page, sur desktop >992px, avec un text-lg-end.</li>
+                <li class="list-group-item">Changer le contenu de la modale "résultat attendu" qui se lance au clic par
+                    une image de GIF de votre choix ! (j'aime les chats, et matrix).</li>
+                <li class="list-group-item">Centrer la section sur Desktop avec une taille de hero de min-vh-100</li>
+                <li class="list-group-item">Pour finir passer le header en fixed-top</li>
             </ol>
 
             <!-- Button trigger modal -->
@@ -181,7 +174,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Résultat attendu Chapitre 2</h5>
+                    <h5 class="modal-title">Résultat attendu Chapitre 4</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
