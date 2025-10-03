@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap / From Noob to Ninja</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="./../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./../apple-touch-icon.png" type="image/png">
+
+    <!-- BS minified -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- BS icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="sticky-lg-top">
+        <!-- Add sticky top header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Use container instead of container-fluid -->
+                <a class="navbar-brand d-inline-flex align-items-center" href="#"><i
+                        class="bi bi-bootstrap-fill me-2 fs-2"></i>Bootstrap <span
+                        class="d-none d-sm-inline-block ms-2"> / From Noob to Ninja</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Margin start auto (push right navbar)-->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i>
+                                Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-speedometer"></i> Cours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Mobile first / Responsive design</a></li>
+                                <li><a class="dropdown-item" href="#">Les classes utilitaires</a></li>
+                                <li><a class="dropdown-item" href="#">Les composants</a></li>
+                                <li><a class="dropdown-item" href="#">La grille</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Aller plus loin</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2 me-3">
+                            <a class="nav-link" href="#"><i class="bi bi-code-square me-2"></i>TP</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="engage-btn" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalEngage"><i class="bi bi-briefcase-fill me-2"></i> Engager</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Exercice 4 -->
+    <main>
+        <section id="hero-section">
+
+            <!-- Use a container wrapper -->
+            <div class="container">
+                <!-- Use a row will contain cols -->
+                <div class="row lg-full-height flex-column-reverse flex-lg-row">
+                    <!-- Cf. style.css -->
+                    <!-- Use cols -->
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0 text-center text-lg-start">
+                        <h1 class="fw-bold text-dark">Utilisez Bootstrap pour gagner du temps de conception</h1>
+                        <p class="lead">Le plus fameux des frameworks CSS à votre portée !</p>
+
+                        <!-- https://getbootstrap.com/docs/5.0/components/modal/ -->
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#modalExercice4">Exercice 4</button>
+                        <a href="#exercice5" class="btn btn-outline-secondary btn-lg">Exercice 5 <i
+                                class="bi bi-arrow-down"></i></a>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center mt-5 mt-lg-0 pt-4 pt-lg-0">
+                        <img src="assets/img/logo-bs-5.svg" class="img-fluid max-width-hero-img" alt="Logo Bootstrap 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercice 5 -->
+        <section id="exercice5" class="lg-full-height">
+            <div class="container">
+                <div class="row my-5 py-4 mt-lg-0 pt-lg-0">
+
+                    <div class="col-12">
+                        <h2>Exercice 5</h2>
+                        <p class="lead">Utiliser les modales Bootstrap au clic sur le bouton "engager" du header
+                            (navbar)</p>
+                        <p>Puis y mettre un <a href="https://getbootstrap.com/docs/5.0/forms/overview/">formulaire de
+                                contact</a> de votre choix.</p>
+                    </div>
+
+                    <div class="col-12 my-3">
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Utilisez le code existant (exercice 4)</li>
+                            <li class="list-group-item">Lire la doc si besoin (of course !)</li>
+                            <li class="list-group-item">Mettre un formulaire dans la modale "engage"</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseAlert" aria-expanded="false" aria-controls="collapseAlert">
+                            <i class="bi bi-award-fill"></i> Bonus !
+                        </button>
+                    </div>
+
+                    <div class="col-12 mb-5 collapse" id="collapseAlert">
+                        <!-- Alert info -->
+                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <strong>Hey les noobies, devenez des Ninjas !</strong> Le bonus consiste à mettre <a
+                                href="https://getbootstrap.com/docs/5.0/components/modal/" class="alert-link"
+                                target="_blank">l'autofocus</a> sur le premier champ du formulaire. Il va falloir
+                            utiliser un peu de JS ; oh yeah.
+                            <p class="strong">
+                                Et comme d'hab, <strong>amusez-vous !</strong>
+                            </p>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h5>Vous devez me rendre un zip avec à l'intérieur :</h5>
+                        <ul>
+                            <li>L'exercice 5 "modale engage" (fourni) terminé d'après les consignes</li>
+                            <li>Que vous nommerez : Nom_Prenom_exercice5.zip
+                            </li>
+                            <li>
+                                A l'intérieur du zip, rédiger un court document .txt où vous expliquez les difficultés
+                                que vous avez rencontré, et pourquoi vous n'y êtes pas arrivé le cas échéant.
+                            </li>
+                            <li>
+                                Envoyer le zip sur <a href="mailto:etienneleriche@gmail.com">mon adresse mail</a>, où
+                                via un lien <a href="https://wetransfer.com/">wetransfer</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
+                        <p><i class="bi bi-info-circle-fill"></i> Il y aura des points en moins si la nomenclature du
+                            fichier n'est pas correcte où si le zip n'est pas complet.</p>
+                    </div>
+
+                    <div class="col-12">
+                        <small class="text-primary">Je suis dans l'obligation de vous noter sur cet exercice... Alors
+                            épatez moi, et prouvez que vous êtes de futurs Ninjas de Bootstrap ! :)</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal BS for button exercice 4 -->
+    <div class="modal fade" tabindex="-1" id="modalExercice4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="h3 modal-title">Les mains dans le cambouis !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Reproduisez les deux screens suivant sans CSS !</h5>
+                    <p>Utilisez les classes utilitaire sur la row pour inverser l'ordre des cols sur mobile jusqu'à LG
+                        (992px).</p>
+                    <p>Vous devrez également jouer sur les classes utilitaires mt-x et mt-lg-0 ; pour se rapprocher des
+                        résultats (screens ci-joint). Il existe également une classe "text-center" et une classe
+                        "text-lg-start"...
+                    </p>
+                    <ol>
+                        <li>Utlisez une classe utilitaire flexbox dans la row, pour le rendu mobile</li>
+                        <li>Utilisez une classe utilitaire flexbox avec un breakpoint pour spécifier qu'il s'agit d'une
+                            row à partir de LG</li>
+                    </ol>
+                    <p class="fw-bold">Amusez-vous !</p>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid" src="assets/screens/rendu-avant-lg.png" alt="Rendu mobile">
+                        <figcaption class="figure-caption">Rendu mobile/tablette (avant LG)</figcaption>
+                    </figure>
+                    <figure class="figure mt-4">
+                        <img class="img-fluid" src="assets/screens/a-partir-de-LG.png" alt="Rendu desktop">
+                        <figcaption class="figure-caption">Rendu Desktop (à partir de 992px)</figcaption>
+                    </figure>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://flexboxfroggy.com/#fr">Besoin de réviser ?</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <a href="https://getbootstrap.com/docs/5.0/utilities/flex/#direction" target="_blank"
+                        class="btn btn-outline-success">Solution</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Votre modale exercice 5 ici -->
+    <div class="modal fade" tabindex="-1" id="modalEngage">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title">Nous allons faire de grandes choses ensemble !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-floating">
+                        <div class="row">
+                            <div class="col-6">
+
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Quel est votre nom de famille ?">
+                                  </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="prenom" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" placeholder="Quel est votre prénom ?">
+                                  </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="email" class="form-label">Adresse E-mail</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="johnatan-h@orange.fr" required>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="select" class="form-label">Vous m'engagez pour ?</label>
+                                <select class="form-select" aria-label="Default select example" id="select">
+                                    <option selected>Création de sites web de A à Z</option>
+                                    <option value="1">Design Graphique</option>
+                                    <option value="2">Développement web</option>
+                                    <option value="3">UX/UI Design</option>
+                                    <option value="4">Autre</option>
+                                  </select>
+                            </div>
+                                  
+                            <div class="col-12 mt-4 text-end">
+                                <input type="submit" class="btn btn-outline-primary" value="Envoyer le formulaire">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Vendor scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
