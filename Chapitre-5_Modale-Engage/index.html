@@ -59,7 +59,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container mb-5">
 
             <section id="hero-section" class="h-100 d-flex  min-vh-100 align-items-center justify-content-center mt-n5">
 
@@ -115,12 +115,13 @@
                             dans sa dernière version.</p>
                         <p class="fw-bold">Passez de newbies à de véritables Ninjas avec Bootstrap 5.3</p>
                         <div class="btn-container text-center text-lg-start">
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#result-modal">
-                                Résultat attendu
+                            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#bravo-modal">
+                                Bravo !
                                 <i class="bi bi-award ms-2"></i>
 
                             </button>
+                            <a href="#exercice5" class="btn btn-outline-dark btn-lg ms-3">Exercice 5 <i class="bi bi-arrow-down"></i></a>
                         </div>
                     </div>
 
@@ -134,67 +135,11 @@
             </section>
 
 
-            <!-- <h2 class="mt-2">Chapitre 5 - Les Composants</h2>
+            <h2 class="mt-2" id="exercice5">Chapitre 5 - Une modale "Engagez-moi"</h2>
 
-            <!-- Toast trigger link 
-            <a href="#" class="btn btn-warning mb-3" id="toast-trigger">
-                Afficher le toast <i class="bi bi-bell ms-1"></i>
-            </a>
 
-            <!-- Toast component 
-            <div class="toast align-items-center text-bg-warning border-0 position-fixed bottom-0 end-0 m-3"
-                id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body">
-                        Ceci est un toast Bootstrap !
-                    </div>
-                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                        aria-label="Close"></button>
-                </div>
-            </div>
-
-            <!-- Accordion Bootstrap Component 
-            <div class="accordion mb-4" id="exampleAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Qu'est-ce que Bootstrap ?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#exampleAccordion">
-                        <div class="accordion-body">
-                            Bootstrap est un framework CSS populaire pour créer des sites web réactifs et modernes
-                            rapidement.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Pourquoi utiliser Bootstrap ?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#exampleAccordion">
-                        <div class="accordion-body">
-                            Il facilite la mise en page, l'accessibilité et propose de nombreux composants prêts à
-                            l'emploi.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Offcanvas Trigger Button 
-            <button class="btn btn-dark mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideOffcanvas"
-                aria-controls="sideOffcanvas">
-                <i class="bi bi-list"></i> Menu
-            </button>
-
-            <a href="https://getbootstrap.com/docs/5.3/layout/grid/" class="mt-3 btn btn-primary" target="_blank"
-                rel="noopener noreferrer">BS Grid system <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+            <a href="https://getbootstrap.com/docs/5.3/forms/overview/" class="mt-3 btn btn-primary" target="_blank"
+                rel="noopener noreferrer">BS Forms <i class="bi bi-box-arrow-up-right ms-1"></i></a>
 
             <h3 class="mt-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="none" viewBox="0 0 46 46">
@@ -230,23 +175,24 @@
             <p>En plus des consignes obligatoires :</p>
 
             <ol class="list-group list-group-numbered my-3">
-                <li class="list-group-item">Mettre l'image alignée sur la bordure droite du container pour garder une
-                    cohérence sur l'alignement de la page, sur desktop >992px.</li>
-                <li class="list-group-item">Changer le contenu de la modale "résultat attendu" qui se lance au clic par
-                    une image de GIF de votre choix ! (j'aime les chats, et matrix)</li>
+                <li class="list-group-item">Lorsque la modale s'ouvre, le curseur doit automatiquement être placé dans
+                    le champ « Nom ». Pour cela, vous allez devoir utiliser un peu de JavaScript.</li>
+                <li class="list-group-item">Rendez le formulaire responsive</li>
+                <li class="list-group-item">Personnalisez votre modale</li>
             </ol>
 
-            <!-- Button trigger modal 
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#result-modal">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                data-bs-target="#waiting-result-modal">
                 <i class="bi bi-award me-1"></i> Résultat attendu
-            </button> -->
+            </button>
 
         </div>
     </main>
 
 
-    <!-- Modale display result -->
-    <div class="modal modal-lg fade" id="result-modal" tabindex="-1">
+    <!-- Bravo Modale  -->
+    <div class="modal modal-lg fade" id="bravo-modal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -254,7 +200,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="tenor-gif-embed" data-postid="8136968606609759629" data-share-method="host" data-aspect-ratio="1.87218" data-width="100%"><a href="https://tenor.com/view/matrix-film-gif-8136968606609759629">Matrix Film GIF</a>from <a href="https://tenor.com/search/matrix-gifs">Matrix GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                    <div class="tenor-gif-embed" data-postid="8136968606609759629" data-share-method="host"
+                        data-aspect-ratio="1.87218" data-width="100%"><a
+                            href="https://tenor.com/view/matrix-film-gif-8136968606609759629">Matrix Film GIF</a>from <a
+                            href="https://tenor.com/search/matrix-gifs">Matrix GIFs</a></div>
+                    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -263,54 +213,32 @@
         </div>
     </div>
 
-    <!-- Offcanvas Component -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideOffcanvas" aria-labelledby="sideOffcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sideOffcanvasLabel">Navigation</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <!-- Hero Image Small -->
-            <div class="text-center mb-4">
-                <img src="assets/img/hero-imag.svg" alt="Hero Image" class="img-fluid" style="max-width: 120px;">
+    <!-- Modale display result -->
+    <div class="modal modal-lg fade" id="waiting-result-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Résultat attendu Chapitre 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="resultat-attendu_chap5.gif" alt="Résultat attendu Chapitre 5" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-            <!-- Menu Navigation -->
-            <nav>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hero-section"><i class="bi bi-house"></i> Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#exampleAccordion"><i class="bi bi-journal-text"></i> Chapitre 5 - Les
-                            Composants</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#result-modal" data-bs-toggle="modal"><i class="bi bi-award"></i>
-                            Résultat attendu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank"><i
-                                class="bi bi-box-arrow-up-right"></i> BS Grid system</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="offcanvas-footer text-center py-3 border-top">
-            <small>&copy; 2024 Etienne. Tous droits réservés.</small>
         </div>
     </div>
+
+    
 
     <!-- Importer BS Script ici -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Toast BS -->
+    <!-- Engage Ninja autofocus -->
     <script>
-        document.getElementById('toast-trigger').addEventListener('click', function (e) {
-            e.preventDefault();
-            var toastEl = document.getElementById('myToast');
-            var toast = new bootstrap.Toast(toastEl);
-            toast.show();
-        });
+        //C'est a vous de jouer ! Vous devez faire en sorte que le curseur se place automatiquement dans le champ "Nom" lorsque la modale s'ouvre.
     </script>
 </body>
 

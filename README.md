@@ -1,71 +1,215 @@
-# Bootstrap From Noob to Ninja  
+# Bootstrap From Noob to Ninja
+
 ![Passez de Newbies à de véritables Ninjas avec Bootstrap 5](./screenshot.png)
 
-Apprends à maîtriser **Bootstrap**, le framework CSS le plus utilisé au monde, en partant de zéro jusqu’à un niveau avancé.  
-Chaque chapitre propose un **TP concret** et des explications pas à pas pour que tu deviennes autonome.  
+Apprends à maîtriser **Bootstrap 5** en partant de zéro jusqu'à la création d'interfaces web responsives et interactives.
+
+Chaque chapitre propose un **TP concret**, des consignes progressives et surtout une bonne dose de manipulation : parce qu'on apprend beaucoup mieux en cassant quelque chose qu'en regardant quelqu'un d'autre le faire.
 
 ---
 
-## 🚀 Programme du cours  
+## 🥷 Le principe
 
-### Chapitre 1 – Importer Bootstrap  
-- Via CDN et via installation locale  
-- Structure de base d’une page HTML avec Bootstrap  
-- Vérification de l’intégration  
+Le principe est simple :
 
-### Chapitre 2 – Simple Navbar  
-- Créer une barre de navigation fixe et responsive  
-- Gérer le burger menu sur mobile  
-- Personnalisation avec les classes utilitaires  
+**Noob → Développeur → Ninja**
 
-### Chapitre 3 – Les icônes  
-- Introduction à **Bootstrap Icons**  
-- Importation et intégration dans les pages  
-- Personnalisation (taille, couleur, positionnement)  
+Pas besoin de connaître Bootstrap par cœur.
 
-### Chapitre 4 – Hero Section Responsive  
-- Créer une section d’accueil moderne  
-- Utiliser le système **Grid** et **Flex**  
-- Adapter la mise en page aux différents écrans  
+Le but est de comprendre :
 
-### Chapitre 5 – Les composants Bootstrap  
-- Boutons, alertes, badges  
-- Cards et listes  
-- Collapse et accordéons  
+- comment fonctionne le framework ;
+- comment lire sa documentation ;
+- comment identifier les bonnes classes ;
+- comment assembler ses composants ;
+- comment construire une interface responsive ;
+- comment ajouter progressivement de l'interaction.
 
-### Chapitre 6 – Le système de Grid avancé  
-- Rappels sur `container`, `row`, `col`  
-- Breakpoints et layout responsive  
-- Exercices pratiques  
+La documentation Bootstrap sera votre meilleur ami.
 
-### Chapitre 7 – Formulaires et Inputs stylés  
-- Champs de saisie, sélecteurs et boutons radio  
-- Validation et feedback visuel  
-- Formulaire complet responsive  
-
-### Chapitre 8 – Modales et Offcanvas  
-- Créer une modale simple  
-- Ajouter une sidebar mobile avec offcanvas  
-- Interactions avec JavaScript de Bootstrap  
-
-### Chapitre 9 – Personnalisation de Bootstrap  
-Dans ce module, nous explorons la manière d’adapter Bootstrap à l’identité visuelle d’un projet.  
-- Comprendre le rôle des **variables CSS** intégrées à Bootstrap  
-- Modifier les couleurs de base (primaire, secondaire, succès, danger…)  
-- Personnaliser la typographie et les espacements  
-- Ajouter son propre fichier CSS pour surcharger les classes existantes  
-- Exemple concret : transformer la charte Bootstrap par défaut en une identité graphique unique  
-
-
-### Chapitre 10 – Projet final  
-- Construction d’un **mini-site complet responsive**  
-- Navbar + Hero + Sections + Formulaire + Footer  
-- Mise en ligne rapide avec GitHub Pages  
+Et comme tous les bons amis, elle sera disponible 24h/24 dans un onglet de navigateur.
 
 ---
 
-## 🎯 Objectifs pédagogiques  
-- Comprendre les bases et les mécanismes de Bootstrap  
-- Savoir utiliser les composants et la grille responsive  
-- Être capable de créer une landing page moderne sans partir de zéro  
-- Gagner du temps dans ses projets web  
+# 🚀 Programme du cours
+
+## Chapitre 1 — Importer Bootstrap
+
+Premiers pas avec le framework.
+
+- Importer Bootstrap localement
+- Comprendre le rôle du CSS
+- Importer le JavaScript Bootstrap
+- Découvrir les classes utilitaires
+- Modifier rapidement les styles avec les classes Bootstrap
+
+**Objectif :** faire fonctionner Bootstrap dans une page HTML.
+
+---
+
+## Chapitre 2 — Simple Navbar
+
+On attaque la navigation.
+
+- Créer une Navbar Bootstrap
+- Comprendre `navbar-expand-lg`
+- Créer un menu responsive
+- Utiliser le burger menu
+- Découvrir `ms-auto`
+- Manipuler dropdown et éléments désactivés
+
+**Objectif :** créer une navigation responsive sans écrire une seule media query.
+
+---
+
+## Chapitre 3 — Les icônes
+
+Parce qu'un bouton sans icône est parfois juste un bouton qui manque de confiance en lui.
+
+- Importer Bootstrap Icons
+- Utiliser les classes `bi bi-*`
+- Modifier la taille des icônes
+- Ajouter des icônes à la navigation
+- Combiner icônes et classes utilitaires
+
+**Objectif :** enrichir l'interface sans dessiner chaque icône à la main.
+
+---
+
+## Chapitre 4 — Hero Section Responsive
+
+On commence à construire une véritable interface.
+
+- Comprendre la grille 12 colonnes
+- Utiliser `container → row → col`
+- Créer une Hero Section
+- Utiliser `col-12 col-lg-6`
+- Manipuler Flexbox avec les classes Bootstrap
+- Utiliser `flex-column-reverse`
+- Rendre les images fluides avec `img-fluid`
+- Adapter les alignements selon le breakpoint
+
+**Objectif :** construire une Hero Section responsive sans écrire de media query.
+
+---
+
+## Chapitre 5 — Modale Engage
+
+Cette fois, on fait cliquer les choses.
+
+- Créer une modale Bootstrap
+- Déclencher une modale avec `data-bs-toggle`
+- Utiliser `data-bs-target`
+- Construire un formulaire Bootstrap
+- Utiliser les champs `form-control`
+- Utiliser `form-select`
+- Organiser un formulaire avec la grille
+- Ajouter une validation HTML simple
+- Utiliser JavaScript avec `shown.bs.modal`
+- Donner automatiquement le focus à un champ
+
+**Objectif :** créer une véritable interaction utilisateur avec une modale contenant un formulaire de contact.
+
+### 🥷 Ninja Challenge
+
+Pour aller plus loin :
+
+- rendre le formulaire entièrement responsive ;
+- ajouter un autofocus ;
+- personnaliser la modale ;
+- modifier les champs et les prestations ;
+- améliorer l'expérience utilisateur.
+
+---
+
+# 🎯 Objectifs pédagogiques
+
+À la fin de cette première partie, vous devez être capable de :
+
+- comprendre la logique de Bootstrap ;
+- utiliser les classes utilitaires ;
+- construire une navigation responsive ;
+- utiliser la grille 12 colonnes ;
+- créer des layouts responsives ;
+- utiliser les composants Bootstrap ;
+- intégrer des icônes ;
+- créer une modale interactive ;
+- construire un formulaire stylé ;
+- lire et exploiter la documentation Bootstrap.
+
+Mais surtout :
+
+**savoir chercher une solution plutôt que tout connaître par cœur.**
+
+Un développeur n'est pas une encyclopédie.
+
+C'est quelqu'un qui sait où chercher.
+
+---
+
+# 📚 La documentation
+
+Gardez la documentation officielle Bootstrap ouverte pendant toute la formation.
+
+Vous allez y retourner.
+
+Souvent.
+
+Très souvent.
+
+Probablement plus souvent que vous ne l'imaginez.
+
+Et c'est parfaitement normal.
+
+---
+
+# 🧠 Si vous êtes bloqué
+
+Suivez cet ordre :
+
+1. Relisez les consignes.
+2. Inspectez votre HTML.
+3. Consultez la documentation Bootstrap.
+4. Comparez votre code avec les exemples de la documentation.
+5. Utilisez une IA comme aide au déblocage si nécessaire.
+6. Demandez de l'aide lorsque vous avez réellement épuisé les pistes.
+
+L'objectif n'est pas de réussir sans jamais chercher.
+
+L'objectif est de devenir progressivement **autonome dans votre recherche de solutions**.
+
+---
+
+# 🥋 La philosophie du cours
+
+Ne cherchez pas à faire parfait dès le premier essai.
+
+Testez.
+
+Cassez.
+
+Inspectez.
+
+Modifiez.
+
+Rechargez.
+
+Recommencez.
+
+Et surtout :
+
+## Amusez-vous.
+
+Parce qu'entre un développeur qui déteste ce qu'il fait et un développeur qui prend plaisir à comprendre pourquoi son `div` refuse obstinément de se placer au bon endroit...
+
+...il y a généralement quelques heures de sommeil.
+
+---
+
+## 🏆 From Noob to Ninja
+
+Vous commencez avec quelques balises HTML.
+
+Vous terminez avec une interface responsive, des composants Bootstrap et suffisamment de confiance pour aller fouiller la documentation sans paniquer.
+
+**Le prochain niveau vous attend.**
