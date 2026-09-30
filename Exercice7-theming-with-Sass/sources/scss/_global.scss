@@ -1,0 +1,8 @@
+@import "variables";
+@import "mixins";
+
+/* Global styles */
+*::selection {
+    background-color: purple;
+    color: rgba(255, 255, 255, 0.883);
+}

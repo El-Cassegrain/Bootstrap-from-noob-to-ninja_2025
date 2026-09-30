@@ -1,4 +1,4 @@
-# Bootstrap From Noob to Ninja
+# 🥷 Bootstrap From Noob to Ninja
 
 ![Passez de Newbies à de véritables Ninjas avec Bootstrap 5](./screenshot.png)
 
@@ -56,7 +56,7 @@ On attaque la navigation.
 - Créer un menu responsive
 - Utiliser le burger menu
 - Découvrir `ms-auto`
-- Manipuler dropdown et éléments désactivés
+- Manipuler les dropdowns et les éléments désactivés
 
 **Objectif :** créer une navigation responsive sans écrire une seule media query.
 
@@ -122,6 +122,65 @@ Pour aller plus loin :
 
 ---
 
+## Chapitre 6 — Card Time
+
+On commence à organiser le contenu avec les **Cards Bootstrap 5**.
+
+- Utiliser `.card`, `.card-body`, `.card-title` et `.card-text`
+- Organiser les Cards avec `.row` et `.col-*`
+- Comprendre les breakpoints
+- Construire une grille responsive
+- Utiliser les classes d'espacement
+- Appliquer une approche **mobile-first**
+
+**Objectif :** créer une série de Cards responsive sans écrire de media query.
+
+### 🥷 Ninja Challenge
+
+Testez différentes combinaisons de colonnes et observez leur comportement à chaque breakpoint.
+
+**Documentation :**
+
+- [Bootstrap 5 — Cards](https://getbootstrap.com/docs/5.3/components/card/)
+- [Bootstrap 5 — Grid](https://getbootstrap.com/docs/5.3/layout/grid/)
+- [Bootstrap 5 — Breakpoints](https://getbootstrap.com/docs/5.3/layout/breakpoints/)
+
+---
+
+## Chapitre 7 — Theming with Sass
+
+On passe au niveau supérieur : **personnaliser Bootstrap au lieu de simplement utiliser ses valeurs par défaut.**
+
+- Installer et utiliser Sass
+- Comprendre les fichiers `.scss`
+- Modifier les variables Bootstrap
+- Personnaliser `$primary` et les couleurs du thème
+- Organiser ses variables dans `_variables.scss`
+- Charger ses variables avant Bootstrap
+- Compiler le SCSS en CSS
+- Comprendre le principe du theming Bootstrap
+
+**Objectif :** créer son propre thème Bootstrap 5 en modifiant ses variables Sass plutôt qu'en surchargeant systématiquement le CSS.
+
+### 🥷 Ninja Challenge
+
+Modifiez le thème fourni :
+
+- changez les couleurs principales ;
+- expérimentez avec les variables Bootstrap ;
+- personnalisez les composants ;
+- compilez votre propre `style.css`.
+
+**Documentation :**
+
+- [Bootstrap 5 — Sass](https://getbootstrap.com/docs/5.3/customize/sass/)
+
+À ce stade, vous ne vous contentez plus d'utiliser Bootstrap.
+
+**Vous commencez à le dompter.**
+
+---
+
 # 🎯 Objectifs pédagogiques
 
 À la fin de cette première partie, vous devez être capable de :
@@ -135,6 +194,7 @@ Pour aller plus loin :
 - intégrer des icônes ;
 - créer une modale interactive ;
 - construire un formulaire stylé ;
+- personnaliser Bootstrap avec Sass ;
 - lire et exploiter la documentation Bootstrap.
 
 Mais surtout :
@@ -210,6 +270,6 @@ Parce qu'entre un développeur qui déteste ce qu'il fait et un développeur qui
 
 Vous commencez avec quelques balises HTML.
 
-Vous terminez avec une interface responsive, des composants Bootstrap et suffisamment de confiance pour aller fouiller la documentation sans paniquer.
+Vous terminez avec une interface responsive, des composants Bootstrap, un thème personnalisé et suffisamment de confiance pour aller fouiller la documentation sans paniquer.
 
 **Le prochain niveau vous attend.**

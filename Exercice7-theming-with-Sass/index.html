@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap • From Noob to Ninja</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- BS minified dropped ! 
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    -->
+
+    <!-- Importer les BS Icons ici-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Main style all is compiled here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header id="main-header" class="fixed-top" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-sm">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/img/logo.svg" alt="Logo Bootstrap From Noob to Ninja" width="30" height="24"
+                        class="me-3">
+                    Bootstrap Ninja
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="ms-auto">
+                        <span class="text-light">MERCI</span>
+
+                        <!-- Button -->
+                        <a class="btn btn-outline-light ms-lg-3" aria-current="page"
+                            href="https://github.com/el-cassegrain" target="_blank"><i class="bi bi-github pe-1"></i>
+                            Crédits</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mb-5">
+
+
+
+
+            <section id="hero-section" class="h-100 d-flex  min-vh-100 align-items-center justify-content-center mt-n5">
+
+
+                <!-- Créer la row et les col ici puis faites les consignes -->
+                <div class="row flex-column-reverse align-items-center flex-lg-row align-items-lg-start">
+                    <div class="col-12 col-lg-6">
+                        <!-- Mettre le h1 et le texte d'intro dans la première col -->
+                        <h1
+                            class="mt-5 mt-lg-0 mb-3 display-2 fw-bold text-center text-lg-start text-uppercase d-flex flex-column">
+                            Bootstrap
+                            <span class="fs-2 fw-medium">
+                                From
+
+                                <span style="color: #4B484D" class="d-inline-flex align-items-center me-2">
+                                    Noob
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none"
+                                        class="mt-1 ms-2" viewBox="0 0 34 34">
+                                        <path stroke="#4B484D" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M14.167 22.667c.708.425 1.7.708 2.833.708 1.133 0 2.125-.283 2.833-.708M21.25 17h.014m6.191-7.348a12.749 12.749 0 0 1 2.012 4.798 2.834 2.834 0 0 1 0 5.1 12.75 12.75 0 0 1-24.934 0 2.833 2.833 0 0 1 0-5.1A12.75 12.75 0 0 1 17 4.25c2.833 0 4.958 1.558 4.958 3.542 0 1.983-1.275 3.541-2.833 3.541-1.133 0-2.125-.566-2.125-1.416M12.75 17h.014" />
+                                    </svg>
+                                </span>to
+                                <span style="background: linear-gradient(65deg, #9313FD, #E810E6);
+                                -webkit-background-clip: text; /* nécessaire pour Chrome, Safari */
+                                -webkit-text-fill-color: transparent; /* masque le texte */
+                                background-clip: text; /* pour Firefox (expérimental) */"
+                                    class="d-inline-flex align-items-center">
+                                    Ninja <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" fill="none"
+                                        class="ms-2" viewBox="0 0 28 29">
+                                        <g clip-path="url(#a)">
+                                            <path fill="url(#b)"
+                                                d="M19.737 17.9c2.827-1.688 4.718-4.757 4.718-8.255 0-5.317-4.38-9.645-9.76-9.645C10.12 0 6.271 3.128 5.22 7.331L1.982 4.133.025 6.072l2.17 2.144H0v2.738h5.027c.404 2.944 2.159 5.473 4.627 6.947C5.118 19.73 1.826 23.963 1.396 29h2.786c.566-5.237 5.067-9.335 10.518-9.335 5.452 0 9.952 4.093 10.519 9.335h2.786c-.435-5.037-3.727-9.27-8.268-11.1ZM14.695 2.74a7.002 7.002 0 0 1 5.75 2.988h-11.5a7.009 7.009 0 0 1 5.75-2.988ZM7.707 9.645c0-.405.035-.8.1-1.184h13.776a6.99 6.99 0 0 1-.076 2.738H7.889a6.573 6.573 0 0 1-.182-1.554Zm1.522 4.293h10.943A7.005 7.005 0 0 1 14.7 16.55a6.998 6.998 0 0 1-5.471-2.613Z" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="b" x1="4.145" x2="29.443" y1=".725" y2="25.072"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#9013FE" />
+                                                <stop offset="1" stop-color="#F210E3" />
+                                            </linearGradient>
+                                            <clipPath id="a">
+                                                <path fill="#fff" d="M0 0h28v29H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </span>
+
+                        </h1>
+
+                        <h2 class="fw-bold text-dark pt-2">Utilisez <img class="d-inline-flex align-items-center"
+                                src="assets/img/logo-sass.svg" width="68" alt="Logo Sass"> pour exploiter toute la
+                            puissance du theming</h2>
+                        <p class="lead">La marche à suivre pour réaliser ses propres thèmes Bootstrap</p>
+
+                        <button type="button"
+                            class="btn btn-primary btn-lg d-inline-flex align-items-center mb-2 mb-lg-0"
+                            data-bs-toggle="modal" data-bs-target="#modalVideo">En une vidéo <i
+                                class="bi bi-youtube ms-2"></i></button>
+                        <a href="#architecture"
+                            class="btn btn-outline-secondary btn-lg ms-3 d-none d-lg-inline-flex align-items-lg-center">En
+                            savoir plus <i class="ps-1 bi bi-arrow-down"></i></a>
+                    </div>
+
+                    <!-- L'image hero se trouve dans assets/img/ la mettre dans seconde col -->
+                    <div class="col-12 col-lg-6 text-center text-lg-end">
+                        <img src="assets/img/hero-img.svg" alt="Image Hero Bootstrap From Noob to Ninja"
+                            class="img-fluid max-width-hero-img">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- More -->
+        <section id="architecture" data-bs-theme="dark" class="bg-dark text-light mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-4 mt-lg-5 pt-lg-4">
+                        <h2>Vous avez regardé la vidéo ?</h2>
+                        <p class="lead">Vous allez aimer ce qui va suivre</p>
+                    </div>
+                    <div class="col-12 col-lg-6 my-4">
+                        <figure class="figure">
+                            <img src="assets/img/Architecture-bootstrap-sass.jpg" alt="Architecture Bootstrap/Sass"
+                                class="img-fluid">
+                            <figcaption class="figure-caption">Comment organiser son projet</figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="col-12 col-lg-6 px-lg-4 mt-3 mt-lg-4">
+                        <h3>La démarche</h3>
+                        <p class="lead">Charger ses propres SCSS avant ceux de Bootstrap, afin d'écraser les valeurs
+                            par
+                            défaut.</p>
+                        <p>Vous pouvez ainsi changer les variables telles que <code>$primary</code> par exemple,
+                            pour
+                            changer la couleur primaire du thème.</p>
+
+                        <h3>Pour le thème ici présent</h3>
+                        <p class="lead">Nous avons commencé par modifier les variables des couleurs du thème par
+                            défaut
+                            de Bootstrap. On charge nos propres valeurs assignées aux variables pré-codées par
+                            défaut
+                            par BS. Nous les répertorions dans le document <code>_variables.scss</code></p>
+                    </div>
+                </div>
+
+                <div class="row py-3 py-lg-5">
+                    <div class="col-12 text-center">
+                        <img src="assets/img/variables.png" alt="Variables du projet" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row mt-3 py-3">
+                    <div class="col-12 text-center">
+                        <a class="btn btn-success btn-lg"
+                            href="https://getbootstrap.com/docs/5.3/customize/sass/">Documentation <i
+                                class="bi bi-box-arrow-up-right ps-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer id="main-footer" class="fixed-bottom d-flex justify-content-end p-4">
+        Created with ❤️
+    </footer>
+
+    <!-- Modal for grafikart video -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <iframe height="600" min-width="360" max-width="900" min-height="600" max-height="750"
+                    src="https://www.youtube.com/embed/WEzg6ZP4W2g" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Vendor scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

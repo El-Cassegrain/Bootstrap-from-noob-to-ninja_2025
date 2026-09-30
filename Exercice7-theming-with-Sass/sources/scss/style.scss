@@ -1,0 +1,46 @@
+/* Import my sass */
+@import "global";
+@import "header";
+
+/* Then import all Bootstrap */
+@import "bootstrap/bootstrap";
+
+/* Main styles */
+.max-width-hero-img {
+    transform: rotateZ(-10deg);
+    animation: bump ease-in-out 3s infinite;
+}
+
+@keyframes bump {
+    0% {
+        transform: rotateZ(-10deg);
+    }
+    70% {
+        transform: translateY(-15px) rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(-10deg) translateY(0)
+    }
+}
+
+section#hero-section::before {
+    content: "THEMING";
+    display: flex;
+    position: absolute;
+    font-weight: bold;
+    color: rgba(233, 233, 233, 0.55);
+    top: 30%;
+    left: 10%;
+    font-size: 10vw;
+    z-index: -1;
+}
+
+@media screen and (min-width: 992px){ /* Breakpoint BS for LG */
+    
+    /* Exercice 4, exercice 5 */
+    .lg-full-height {
+        height: calc(100vh - var(--header-height));
+        display: flex;
+        align-items: center;
+    }
+}
